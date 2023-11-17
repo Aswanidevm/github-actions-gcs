@@ -17,6 +17,7 @@ jobs:
           service_account_key: ${{ secrets.GCP_SA_KEYS }}
           project_id: github-actions-gcs
       - name: Deploy via GCS
+
         run: |
           gsutil -m rm -rf gs://githubactions-gcs/*
           gsutil -m rm -rf gs://githubactions-gcs/*
