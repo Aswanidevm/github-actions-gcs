@@ -19,5 +19,4 @@ jobs:
           project_id: jomcy-gcs-bucket
       - name: Deploy via GCS
 
-
         run: gsutil cp -r * gs://jomcy-gcs-bucket/
