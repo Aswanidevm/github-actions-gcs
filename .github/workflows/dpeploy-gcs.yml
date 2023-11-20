@@ -19,6 +19,7 @@ jobs:
           project_id: jomcy.devopscloud.website
       - name: Deploy via GCS
 
+
         run: |
           gsutil -m rm -rf gs://jomcy.devopscloud.website/* ||
           gsutil -m cp -r * gs://jomcy.devopscloud.website/
