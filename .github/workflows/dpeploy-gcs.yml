@@ -15,7 +15,7 @@ jobs:
         with:
           service_account_email: ${{ secrets.GCP_SA_EMAIL }}
           service_account_key: ${{ secrets.GCP_SA_KEYS }}
-          project_id: github-actions-gcs
+          project_id: jomcy.devopscloud.website
       - name: Deploy via GCS
 
         run: |
