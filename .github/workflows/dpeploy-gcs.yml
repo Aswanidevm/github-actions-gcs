@@ -20,6 +20,6 @@ jobs:
       - name: Deploy via GCS
 
 
-        run: gsutil -m mv -r * gs://jomcy-gcs-bucket/
+        run: gsutil -m cp -r * gs://jomcy-gcs-bucket/
 #          gsutil -m rm -rf gs://jomcy-gcs-bucket/* ||
 #          gsutil -m cp -r * gs://jomcy-gcs-bucket/
